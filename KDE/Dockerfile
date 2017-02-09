@@ -27,7 +27,7 @@ RUN echo "root:SuperSecureRootPassword" | chpasswd
 RUN chage -d 0 root
 
 # Configure default user
-RUN adduser --gecos "X2go User" -m --disabled-password x2go
+RUN adduser --gecos "X2go User" --home /home/x2go --disabled-password x2go
 RUN echo "x2go:x2go" | chpasswd
 
 #Desktop Note with credits
