@@ -20,9 +20,9 @@ RUN apt-get install -y x2goserver
 # SSH runtime
 RUN mkdir /var/run/sshd
 
-#Configure root password and set it to expire to force user to change
+#Configure root password
 RUN echo "root:SuperSecureRootPassword" | chpasswd
-RUN chage -d 0 root
+
 
 # Configure default user
 RUN adduser --gecos "X2go User" --home /home/x2go --disabled-password x2go
@@ -31,6 +31,9 @@ RUN echo "x2go:x2go" | chpasswd
 #Desktop Note with credits
 RUN echo -e "To give the user sudo access, run 'su' and use the password 'SuperSecureRootPassword' (You will be told to change this) and then use 'usermod -aG sudo x2go'.\nEnjoy!\n\nThis script was based on the work of https://github.com/bigbrozer - Check out his Github!" | tee /home/x2go/Desktop/README.txt
 RUN chown x2go:x2go /home/x2go/Desktop/README.txt && chmod 777 /home/x2go/Desktop/README.txt
+
+#Expire root password
+RUN chage -d 0 root
 
 # Run it
 EXPOSE 22
