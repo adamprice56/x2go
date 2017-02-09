@@ -29,6 +29,7 @@ RUN adduser --gecos "X2go User" --home /home/x2go --disabled-password x2go
 RUN echo "x2go:x2go" | chpasswd
 
 #Desktop Note with credits
+RUN touch /home/x2go/Desktop/README.txt
 RUN echo -e "To give the user sudo access, run 'su' and use the password 'SuperSecureRootPassword' (You will be told to change this) and then use 'usermod -aG sudo x2go'.\nEnjoy!\n\nThis script was based on the work of https://github.com/bigbrozer - Check out his Github!" | tee /home/x2go/Desktop/README.txt
 RUN chown x2go:x2go /home/x2go/Desktop/README.txt && chmod 777 /home/x2go/Desktop/README.txt
 
