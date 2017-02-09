@@ -6,8 +6,8 @@ TODO: Write a project description
 
 ## Running the containers
 
-**I'd reccommend mounting an external directory for /home to preserve data when containers are deleted/updated**
-docker run -td -p 2202:22 -v /mnt/dockerhome:/home adamprice56/x2go-ubuntu
+**I'd recommend mounting an external directory for /home to preserve data when containers are deleted/updated**
+docker run -td -p 2202:22 -v /mnt/dockerhome:/home adamprice56/x2go-ubuntu:(latest/kde/xfce)
 
 ## Usage
 
