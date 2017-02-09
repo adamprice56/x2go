@@ -1,6 +1,6 @@
 <snippet>
-  <content><![CDATA[
-# ${1:X2go-Ubuntu}
+  <content>
+# X2go-Ubuntu
 
 TODO: Write a project description
 
@@ -35,6 +35,6 @@ TODO: Write credits
 ## License
 
 TODO: Write license
-]]></content>
+</content>
   <tabTrigger>readme</tabTrigger>
 </snippet>
