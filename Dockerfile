@@ -35,8 +35,8 @@ RUN touch /home/x2go/Desktop/README.txt
 RUN echo -e "To give the user sudo access, run 'su' and use the password 'SuperSecureRootPassword' (You will be told to change this) and then use 'usermod -aG sudo x2go'.\nEnjoy!\n\nThis script was based on the work of https://github.com/bigbrozer - Check out his Github!" | tee /home/x2go/Desktop/README.txt
 RUN chown x2go:x2go /home/x2go/Desktop/README.txt && chmod 777 /home/x2go/Desktop/README.txt
 
-#Expire root password
-RUN chage -d 0 root
+#Expire root password after a day
+RUN chage -d 1 root
 
 # Run it
 EXPOSE 22
