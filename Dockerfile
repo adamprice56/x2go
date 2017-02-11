@@ -36,7 +36,7 @@ RUN echo -e "To give the user sudo access, run 'su' and use the password 'SuperS
 RUN chown x2go:x2go /home/x2go/Desktop/README.txt && chmod 777 /home/x2go/Desktop/README.txt
 
 #Expire root password after a day
-RUN chage -d 1 root
+#RUN chage -d 1 root
 
 # Run it
 EXPOSE 22
