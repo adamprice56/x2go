@@ -16,13 +16,13 @@ TODO: Write usage instructions
 ## Tags
 
 * latest
- * Basic image with **NO DESKTOP**
+  * Basic image with **NO DESKTOP**
 * kde
- * You guessed it, it's got the KDE plasma desktop.
+  * You guessed it, it's got the KDE plasma desktop.
 * xfce
- * Yep. It's XFCE, just the way xubuntu user's like it.
+  * Yep. It's XFCE, just the way xubuntu user's like it.
 * <s>gnome3</s>
- * Are you mad? Gnome 3 is pretty unstable on x2go... So maybe not.
+  * Are you mad? Gnome 3 is pretty unstable on x2go... So maybe not.
 
 ## History
 
