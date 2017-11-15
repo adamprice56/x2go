@@ -1,5 +1,5 @@
 
-FROM ubuntu:xenial
+FROM ubuntu:artful
 MAINTAINER Adam Price <adam@aprice.cf>
 
 ENV DEBIAN_FRONTEND noninteractive
