@@ -40,4 +40,5 @@ RUN chown x2go:x2go /home/x2go/Desktop/README.txt && chmod 777 /home/x2go/Deskto
 
 # Run it
 EXPOSE 22
+CMD ["service ssh start && service x2goserver start"]
 CMD ["/usr/sbin/sshd", "-D"]
