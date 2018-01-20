@@ -1,4 +1,4 @@
-FROM adamprice56/x2go:kali
+FROM adamprice56/x2go:kali-base
 MAINTAINER Adam Price <adam@aprice.cf>
 
 # Install KDE suite
