@@ -1,5 +1,4 @@
-
-FROM adamprice56/x2go-ubuntu
+FROM adamprice56/x2go:kali
 MAINTAINER Adam Price <adam@aprice.cf>
 
  # fix so resolvconf can be configured

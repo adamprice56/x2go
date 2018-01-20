@@ -1,5 +1,4 @@
-
-FROM ubuntu:xenial
+FROM kalilinux/kali-linux-docker
 MAINTAINER Adam Price <adam@aprice.cf>
 
 ENV DEBIAN_FRONTEND noninteractive
