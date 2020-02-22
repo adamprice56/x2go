@@ -1,5 +1,5 @@
 
-FROM adamprice56/x2go-ubuntu:ubuntu-base
+FROM adamprice56/x2go
 MAINTAINER Adam Price <adam@aprice.cf>
 
  # fix so resolvconf can be configured
