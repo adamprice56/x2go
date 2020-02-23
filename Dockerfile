@@ -1,21 +1,24 @@
-
 FROM ubuntu:eoan
 MAINTAINER Adam Price <adam@aprice.cf>
 
 ENV DEBIAN_FRONTEND noninteractive
 
-# Upgrade packages
-RUN apt-get update -y && apt-get upgrade -y
+# Update repos
+RUN apt-get update -y
 
 # Install requirements
 RUN apt-get install -y \
         software-properties-common \
-        openssh-server
+        openssh-server \
+        apt-utils
+
+# Upgrade packages
+RUN apt-get upgrade -y
 
 # Install X2Go server components
 RUN add-apt-repository ppa:x2go/stable
 RUN apt-get update -y
-RUN apt-get install -y x2goserver
+RUN apt-get install -y x2goserver x2goserver-xsession --no-install-recommends
 
 # SSH runtime
 RUN mkdir /var/run/sshd
